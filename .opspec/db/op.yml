@@ -12,7 +12,7 @@ inputs:
   DB_SCHEMA:
     string:
       description: name of the database to be created
-      default: miniurl
+      default: addressbook
   mysqlCnf:
     file:
       default: /my.cnf

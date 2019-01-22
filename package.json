@@ -4,15 +4,21 @@
   "description": "Address Book service",
   "main": "app/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --inspect app/app.js",
+    "test": "jest --verbose",
+    "coverage": "jest --coverage"
   },
   "author": "Daniel Garcia Alanis",
   "license": "ISC",
   "dependencies": {
-    "hapi": "^17.8.1",
+    "boom": "^7.3.0",
+    "express": "^4.16.4",
+    "hashids": "1.2.2",
     "mysql2": "^1.6.4",
     "sequelize": "^4.42.0",
-    "sequelize-cli": "^5.4.0"
+    "sequelize-cli": "^5.4.0",
+    "sinon": "^7.2.3",
+    "winston": "^3.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
@@ -21,6 +27,8 @@
     "eslint-plugin-hapi": "^4.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.12.4"
+    "eslint-plugin-react": "^7.12.4",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.9"
   }
 }
